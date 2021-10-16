@@ -1,9 +1,9 @@
 # local packages install
-# -e .
+-e .
 
 # third party packages install
 dvc
-dvc[gdrive]
+# dvc[gdrive]
 numpy
 pandas
 sklearn
