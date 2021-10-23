@@ -13,3 +13,14 @@ def read_yaml(path_to_yaml: str) -> dict:
         except yaml.YAMLError as exc:
             print(exc)
     return data # returning the data as a dictionary
+
+
+
+def create_directory(dirs: list):
+    """
+    Creating the directories if they do not exist form the list
+    """
+    for dir_path in dirs:
+        os.makedirs(dir_path, exist_ok=True)
+        print(f"Directory {dir_path} created")
+    
